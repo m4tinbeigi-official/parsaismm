@@ -45,7 +45,7 @@
         }
 
         .wrapper {
-            max-width: 740px;
+            max-width: 780px;
             margin: 0 auto;
         }
 
@@ -148,9 +148,9 @@
         }
 
         .metric-num.gold { color: var(--gold); }
-        .metric-num.emerald { color: var(--emerald); }
-        .metric-num.cyan { color: var(--cyan); }
         .metric-num.rose { color: var(--rose); }
+        .metric-num.cyan { color: var(--cyan); }
+        .metric-num.emerald { color: var(--emerald); }
 
         .metric-label {
             font-size: 11px;
@@ -159,7 +159,7 @@
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 42px;
         }
 
         h2 {
@@ -188,41 +188,54 @@
             margin-bottom: 14px;
         }
 
-        /* Mega Viral 24M Highlight Card */
-        .record-card {
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 19, 29, 0.9) 100%);
-            border: 1px solid rgba(245, 158, 11, 0.45);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 30px;
+        /* 3:4 Record 24M Card */
+        .record-card-34 {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.14) 0%, rgba(15, 19, 29, 0.95) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.5);
+            border-radius: 20px;
+            padding: 22px;
+            margin-bottom: 35px;
             display: flex;
-            gap: 20px;
+            gap: 22px;
             align-items: center;
-            flex-wrap: wrap;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
         }
 
-        .record-cover-wrap {
-            width: 120px;
-            height: 160px;
-            border-radius: 12px;
+        .record-poster-box {
+            width: 155px;
+            aspect-ratio: 3 / 4;
+            border-radius: 14px;
             overflow: hidden;
             flex-shrink: 0;
             border: 2px solid var(--gold);
-            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.25);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.35);
             position: relative;
+            background: #000;
         }
 
-        .record-cover-img {
+        .record-poster-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
 
-        .record-content {
+        .record-badge-overlay {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            font-size: 11px;
+            font-weight: 900;
+            padding: 2px 8px;
+            border-radius: 6px;
+            direction: ltr;
+        }
+
+        .record-info {
             flex: 1;
-            min-width: 240px;
         }
 
         .record-tag {
@@ -237,7 +250,7 @@
         }
 
         .record-title {
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 900;
             color: #fff;
             margin-bottom: 6px;
@@ -266,13 +279,137 @@
             text-decoration: none;
             font-size: 12.5px;
             font-weight: 700;
-            padding: 6px 14px;
+            padding: 7px 16px;
             border-radius: 8px;
             transition: all 0.2s;
         }
 
         .record-link:hover {
             background: var(--gold);
+            color: #07090e;
+        }
+
+        /* 3:4 Reels Grid */
+        .reels-grid-34 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .reel-card-34 {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .reel-card-34:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.22);
+        }
+
+        .reel-poster-box {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .reel-poster-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .reel-card-34:hover .reel-poster-img {
+            transform: scale(1.04);
+        }
+
+        .reel-gradient-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
+            background: linear-gradient(180deg, transparent 0%, rgba(7, 9, 14, 0.95) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 12px;
+            pointer-events: none;
+        }
+
+        .reel-overlay-views {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            font-weight: 900;
+            color: #34d399;
+            direction: ltr;
+            margin-bottom: 4px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+        }
+
+        .reel-overlay-stats {
+            display: flex;
+            gap: 10px;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: #cbd5e1;
+            direction: ltr;
+        }
+
+        .reel-bottom-info {
+            padding: 14px 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            background: var(--surface);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .reel-caption-mini {
+            font-size: 12.5px;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: 500;
+        }
+
+        .reel-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--cyan);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 7px 12px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .reel-action-btn:hover {
+            background: var(--cyan);
             color: #07090e;
         }
 
@@ -364,99 +501,6 @@
             margin-top: 1px;
         }
 
-        /* Top Reels Grid with Covers */
-        .reels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
-            margin-top: 18px;
-        }
-
-        .reel-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.2s;
-        }
-
-        .reel-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-        }
-
-        .reel-thumb-wrap {
-            width: 100%;
-            height: 220px;
-            position: relative;
-            background: #000;
-        }
-
-        .reel-thumb-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .reel-badge-view {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #34d399;
-            font-size: 12px;
-            font-weight: 900;
-            padding: 3px 10px;
-            border-radius: 6px;
-            direction: ltr;
-        }
-
-        .reel-card-body {
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex: 1;
-        }
-
-        .reel-stats-bar {
-            display: flex;
-            justify-content: space-between;
-            font-size: 12.5px;
-            font-weight: 700;
-            color: var(--muted);
-            margin-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding-bottom: 8px;
-        }
-
-        .reel-caption-text {
-            font-size: 12.5px;
-            color: #cbd5e1;
-            line-height: 1.7;
-            margin-bottom: 14px;
-        }
-
-        .reel-card-link {
-            color: var(--cyan);
-            text-decoration: none;
-            font-size: 12.5px;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .reel-card-link:hover {
-            text-decoration: underline;
-        }
-
         .cta-box {
             background: linear-gradient(180deg, #131722 0%, #0c0f16 100%);
             border: 1px solid rgba(245, 158, 11, 0.4);
@@ -512,19 +556,24 @@
             padding-top: 25px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
             .metrics-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            .record-card {
+            .record-card-34 {
                 flex-direction: column;
                 text-align: center;
             }
-            .record-cover-wrap {
+            .record-poster-box {
                 margin: 0 auto;
+                width: 140px;
             }
             .record-stats-row {
                 justify-content: center;
+            }
+            .reels-grid-34 {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 10px;
             }
         }
     </style>
@@ -566,21 +615,22 @@
         </div>
     </header>
 
-    <!-- 24 Million Reel Record Feature -->
-    <div class="record-card">
-        <div class="record-cover-wrap">
-            <img src="assets/cover_C-S6HW5Cmar.jpg" alt="ریلز ۲۴ میلیونی پارسا کمالی" class="record-cover-img">
+    <!-- 24 Million Reel Record Feature in 3:4 Ratio -->
+    <div class="record-card-34">
+        <div class="record-poster-box">
+            <img src="assets/cover_C-S6HW5Cmar.jpg" alt="کاور ریلز ۲۴ میلیونی پارسا کمالی" class="record-poster-img">
+            <span class="record-badge-overlay">24.2M Views</span>
         </div>
-        <div class="record-content">
-            <div class="record-tag">🔥 رکوردی‌ترین اثر پیج</div>
+        <div class="record-info">
+            <div class="record-tag">🔥 اثر رکوردی تاریخ پیج</div>
             <div class="record-title">ریلز شعرخوانی ۲۴.۲ میلیون بازدیدی</div>
             <div class="record-stats-row">
                 <span class="record-stat-item">▶️ ۲۴٬۲۲۲٬۷۸۰ ویو</span>
                 <span>❤️ ۱٬۱۵۶٬۷۸۰ لایک</span>
                 <span>💬 ۳۰٬۸۵۰ کامنت</span>
             </div>
-            <p style="font-size:12.5px; color:#cbd5e1; margin-bottom:12px; line-height:1.7;">
-                «دو شعر، یک کل کل با مزه...» اثری با بیش از ۲۴ میلیون بازدید که به عنوان یکی از وایرال‌ترین ویدیوهای ادبی اینستاگرام فارسی در تاریخ ثبت شد.
+            <p style="font-size:12.5px; color:#cbd5e1; margin-bottom:14px; line-height:1.7;">
+                «دو شعر، یک کل کل با مزه...» اثری با بیش از ۲۴ میلیون بازدید که به عنوان یکی از پربازدیدترین ریلزهای تاریخ ادبیات و شعر اینستاگرام فارسی ثبت شده است.
             </p>
             <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="record-link">
                 مشاهده مستقیم این ریلز در اینستاگرام ↗
@@ -645,117 +695,129 @@
         </div>
     </section>
 
-    <!-- Top Performing Reels Showcase with Real Covers -->
+    <!-- Top Performing Reels Showcase in 3:4 Ratio -->
     <section>
-        <h2>برترین ریلزهای تاریخ پیج با کاور و آمار رسمی</h2>
+        <h2>برترین ریلزهای تاریخ پیج با نسبت ۳:۴ و آمار زنده</h2>
         <p>
-            نمونه‌هایی از پربازدیدترین دکلمه‌ها و ویدیوهای میلیونی پارسا کمالی:
+            نمونه‌هایی از پربازدیدترین دکلمه‌ها و ویدیوهای میلیونی پارسا کمالی با کاورهای استاندارد عمودی ۳:۴:
         </p>
 
-        <div class="reels-grid">
+        <div class="reels-grid-34">
             <!-- 11.4M Reel -->
-            <div class="reel-card">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_C2IKC8oNRBs.jpg" alt="ریلز ۱۱ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view">۱۱.۴M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۴۲۴٬۶۰۰ لایک</span>
-                        <span>💬 ۷٬۴۴۰ کامنت</span>
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_C2IKC8oNRBs.jpg" alt="کاور ریلز ۱۱.۴ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ ۱۱.۴M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۴۲۴K</span>
+                            <span>💬 ۷.۴K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«هر کی حفظی بخونه استوری کنه اد استوری میشه... دکلمه مشاعره و شعرخوانی»</div>
-                    <a href="https://instagram.com/p/C2IKC8oNRBs/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«هر کی حفظی بخونه استوری کنه اد استوری میشه... دکلمه مشاعره و شعرخوانی»</div>
+                    <a href="https://instagram.com/p/C2IKC8oNRBs/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
             </div>
 
             <!-- 9.0M Reel -->
-            <div class="reel-card">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_C8FVlnPi6Ut.jpg" alt="ریلز ۹ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view">۹.۰M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۳۷۲٬۸۰۰ لایک</span>
-                        <span>💬 ۱۱٬۲۹۰ کامنت</span>
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_C8FVlnPi6Ut.jpg" alt="کاور ریلز ۹ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ ۹.۰M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۳۷۲K</span>
+                            <span>💬 ۱۱.۲K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«خر یا آدم؟ این شعر رو واقعا خیلی دوست دارم و حیف بود که دکلمه نشه...»</div>
-                    <a href="https://instagram.com/p/C8FVlnPi6Ut/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«خر یا آدم؟ این شعر رو واقعا خیلی دوست دارم و حیف بود که دکلمه نشه...»</div>
+                    <a href="https://instagram.com/p/C8FVlnPi6Ut/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
             </div>
 
             <!-- 8.2M Reel -->
-            <div class="reel-card">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_DBwPdj9oI7Z.jpg" alt="ریلز ۸ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view">۸.۲M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۳۹۰٬۷۰۰ لایک</span>
-                        <span>💬 ۷٬۵۷۰ کامنت</span>
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DBwPdj9oI7Z.jpg" alt="کاور ریلز ۸.۲ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ ۸.۲M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۳۹۰K</span>
+                            <span>💬 ۷.۵K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«پدر... دکلمه احساسی و ماندگار با صدها هزار اشتراک‌گذاری و اد استوری»</div>
-                    <a href="https://instagram.com/p/DBwPdj9oI7Z/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«پدر... دکلمه احساسی و ماندگار با صدها هزار اشتراک‌گذاری و اد استوری»</div>
+                    <a href="https://instagram.com/p/DBwPdj9oI7Z/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
             </div>
 
             <!-- 7.0M Reel -->
-            <div class="reel-card">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_DFxB8UnoYqF.jpg" alt="ریلز ۷ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view">۷.۰M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۲۶۶٬۲۰۰ لایک</span>
-                        <span>💬 ۵٬۴۵۰ کامنت</span>
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DFxB8UnoYqF.jpg" alt="کاور ریلز ۷ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ ۷.۰M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۲۶۶K</span>
+                            <span>💬 ۵.۴K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«رفته بودم سوی قبرستان شهر... دکلمه دلنشین دوبیتی‌های باباطاهر»</div>
-                    <a href="https://instagram.com/p/DFxB8UnoYqF/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«رفته بودم سوی قبرستان شهر... دکلمه دلنشین دوبیتی‌های باباطاهر»</div>
+                    <a href="https://instagram.com/p/DFxB8UnoYqF/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
             </div>
 
             <!-- 5.8M Reel -->
-            <div class="reel-card">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_C4VqxveCNxM.jpg" alt="ریلز ۵.۸ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view">۵.۸M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۲۷۳٬۳۰۰ لایک</span>
-                        <span>💬 ۱۰٬۵۸۰ کامنت</span>
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_C4VqxveCNxM.jpg" alt="کاور ریلز ۵.۸ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ ۵.۸M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۲۷۳K</span>
+                            <span>💬 ۱۰.۵K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«اینم از آخر عاقبت خجالتی بودن... طنز و شعرخوانی تعاملی با مخاطبان»</div>
-                    <a href="https://instagram.com/p/C4VqxveCNxM/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«اینم از آخر عاقبت خجالتی بودن... طنز و شعرخوانی تعاملی با مخاطبان»</div>
+                    <a href="https://instagram.com/p/C4VqxveCNxM/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
             </div>
 
-            <!-- 24.2M Reel Secondary Card -->
-            <div class="reel-card" style="border-color: rgba(245, 158, 11, 0.4);">
-                <div class="reel-thumb-wrap">
-                    <img src="assets/cover_C-S6HW5Cmar.jpg" alt="ریلز ۲۴.۲ میلیونی" class="reel-thumb-img">
-                    <span class="reel-badge-view" style="color:var(--gold); border-color:var(--gold);">۲۴.۲M ویو</span>
-                </div>
-                <div class="reel-card-body">
-                    <div class="reel-stats-bar">
-                        <span>❤️ ۱٬۱۵۶٬۷۰۰ لایک</span>
-                        <span>💬 ۳۰٬۸۵۰ کامنت</span>
+            <!-- 24.2M Reel Card in 3:4 -->
+            <div class="reel-card-34" style="border-color: rgba(245, 158, 11, 0.45);">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_C-S6HW5Cmar.jpg" alt="کاور ریلز ۲۴.۲ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views" style="color:var(--gold);">▶️ ۲۴.۲M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ ۱.۱M</span>
+                            <span>💬 ۳۰.۸K</span>
+                        </div>
                     </div>
-                    <div class="reel-caption-text">«دو شعر، یک کل کل با مزه... رکوردی‌ترین ریلز پیج پارسا کمالی»</div>
-                    <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«دو شعر، یک کل کل با مزه... رکوردی‌ترین ریلز پیج پارسا کمالی»</div>
+                    <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="reel-action-btn" style="border-color:var(--gold); color:var(--gold);">
                         مشاهده در اینستاگرام ↗
                     </a>
                 </div>
