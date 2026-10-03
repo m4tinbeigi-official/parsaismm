@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>پارسا کمالی (@parsaismm) | پروپوزال رسمی اسپانسرشیپ ۱۰ ویدیوی آینده</title>
-    <meta name="description" content="پروپوزال رسمی حامی مالی و جذب اسپانسر نقدی برای ۱۰ ویدیوی آینده پارسا کمالی (@parsaismm). بیش از ۱.۱۵ میلیون فالوور و میانگین ۹۰۰ هزار ویو در هر ویدیو.">
+    <meta name="description" content="پروپوزال رسمی حامی مالی و جذب اسپانسر نقدی برای ۱۰ ویدیوی آینده پارسا کمالی (@parsaismm). بیش از ۱.۱۵ میلیون فالوور، ریلز ۲۴ میلیونی و میانگین ۹۰۰ هزار ویو در هر ویدیو.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
             --gold-glow: rgba(245, 158, 11, 0.15);
             --cyan: #38bdf8;
             --emerald: #10b981;
+            --rose: #f43f5e;
         }
 
         * {
@@ -36,15 +37,15 @@
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.8;
-            padding: 40px 20px 80px;
+            padding: 40px 16px 80px;
             min-height: 100vh;
             background-image: 
-                radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.1), transparent 50%),
+                radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.12), transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.05), transparent 40%);
         }
 
         .wrapper {
-            max-width: 720px;
+            max-width: 740px;
             margin: 0 auto;
         }
 
@@ -66,17 +67,18 @@
             border: 1px solid rgba(245, 158, 11, 0.35);
             padding: 4px 14px;
             border-radius: 9999px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
 
         .avatar-box {
-            width: 100px;
-            height: 100px;
+            width: 108px;
+            height: 108px;
             margin: 0 auto 16px;
             border-radius: 50%;
             padding: 3px;
             background: linear-gradient(135deg, var(--gold), #fb923c, #ec4899);
-            box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.35);
+            position: relative;
         }
 
         .avatar-img {
@@ -85,6 +87,7 @@
             border-radius: 50%;
             object-fit: cover;
             background: #111;
+            display: block;
         }
 
         h1 {
@@ -99,7 +102,7 @@
             color: var(--cyan);
             direction: ltr;
             display: inline-block;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             text-decoration: none;
             font-weight: 700;
         }
@@ -111,7 +114,7 @@
         .bio-box {
             font-size: 14px;
             color: #cbd5e1;
-            padding: 16px 20px;
+            padding: 14px 20px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 12px;
@@ -125,7 +128,7 @@
         /* Metrics KPI Grid */
         .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin-bottom: 35px;
         }
@@ -134,22 +137,23 @@
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 18px 12px;
+            padding: 16px 8px;
             text-align: center;
         }
 
         .metric-num {
-            font-size: clamp(18px, 4vw, 24px);
+            font-size: clamp(17px, 3.8vw, 22px);
             font-weight: 900;
             color: #fff;
         }
 
         .metric-num.gold { color: var(--gold); }
-        .metric-num.cyan { color: var(--cyan); }
         .metric-num.emerald { color: var(--emerald); }
+        .metric-num.cyan { color: var(--cyan); }
+        .metric-num.rose { color: var(--rose); }
 
         .metric-label {
-            font-size: 11.5px;
+            font-size: 11px;
             color: var(--muted);
             margin-top: 4px;
         }
@@ -182,6 +186,94 @@
             color: var(--muted);
             line-height: 1.9;
             margin-bottom: 14px;
+        }
+
+        /* Mega Viral 24M Highlight Card */
+        .record-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 19, 29, 0.9) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.45);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .record-cover-wrap {
+            width: 120px;
+            height: 160px;
+            border-radius: 12px;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 2px solid var(--gold);
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.25);
+            position: relative;
+        }
+
+        .record-cover-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .record-content {
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .record-tag {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--gold);
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .record-title {
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .record-stats-row {
+            display: flex;
+            gap: 16px;
+            font-size: 13.5px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .record-stat-item {
+            color: var(--emerald);
+        }
+
+        .record-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 12.5px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .record-link:hover {
+            background: var(--gold);
+            color: #07090e;
         }
 
         /* The Main 10-Video Sponsorship Box */
@@ -272,59 +364,96 @@
             margin-top: 1px;
         }
 
-        /* Recent Million Reels Showcase */
+        /* Top Reels Grid with Covers */
         .reels-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 12px;
-            margin-top: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
         }
 
-        .reel-item {
+        .reel-card {
             background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
             transition: all 0.2s;
         }
 
-        .reel-item:hover {
+        .reel-card:hover {
             border-color: var(--gold);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
-        .reel-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
+        .reel-thumb-wrap {
+            width: 100%;
+            height: 220px;
+            position: relative;
+            background: #000;
         }
 
-        .reel-views {
-            font-size: 14px;
-            font-weight: 800;
-            color: var(--emerald);
+        .reel-thumb-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .reel-badge-view {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #34d399;
+            font-size: 12px;
+            font-weight: 900;
+            padding: 3px 10px;
+            border-radius: 6px;
             direction: ltr;
         }
 
-        .reel-caption {
-            font-size: 12.5px;
-            color: #cbd5e1;
-            line-height: 1.6;
-            margin-bottom: 10px;
+        .reel-card-body {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
         }
 
-        .reel-link {
+        .reel-stats-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--muted);
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 8px;
+        }
+
+        .reel-caption-text {
+            font-size: 12.5px;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .reel-card-link {
+            color: var(--cyan);
+            text-decoration: none;
+            font-size: 12.5px;
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
             gap: 4px;
-            color: var(--cyan);
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 700;
         }
 
-        .reel-link:hover {
+        .reel-card-link:hover {
             text-decoration: underline;
         }
 
@@ -382,16 +511,32 @@
             border-top: 1px solid var(--border);
             padding-top: 25px;
         }
+
+        @media (max-width: 600px) {
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .record-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .record-cover-wrap {
+                margin: 0 auto;
+            }
+            .record-stats-row {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
 <div class="wrapper">
     <header>
         <div class="badge-verified">
-            🎙️ رسانه رسمی پارسا کمالی | گوینده و شعرخوان
+            🎙️ رسانه رسمی پارسا کمالی | گوینده و نریتور
         </div>
         <div class="avatar-box">
-            <img src="https://scontent-cph2-1.cdninstagram.com/v/t51.82787-19/538377386_17964375659958462_7211766198286689379_n.jpg?stp=dst-jpg_e0_s150x150_tt6&_nc_cat=1&ig_cache_key=GKr8FiC_0NIlgdI-AGMkDNQlVxVkbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW...MifQ%3D%3D&_nc_ohc=aIa9bAG6qI0Q7kNvwG2HOHX&_nc_oc=Adp96O_rrzr4AHYy-rp2m6IkDqLLSdAnbW5rXhmNizJ4HEOwPXT3yHvfG5SZMxfiLto&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent-cph2-1.cdninstagram.com&_nc_gid=wJmhQC-Xh3eOFK1JVgGOvw&_nc_ss=7c3ba&oh=00_AQPIh1MuNGpQCE-H5lTIrAqq_XNxtH5tIMv2TKpR-L6_CA&oe=6AC716FC" alt="پارسا کمالی" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Parsa+Kamali&background=f59e0b&color=fff'">
+            <img src="assets/avatar.jpg" alt="پارسا کمالی" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Parsa+Kamali&background=f59e0b&color=fff'">
         </div>
         <h1>پارسا کمالی</h1>
         <a href="https://instagram.com/parsaismm" target="_blank" rel="noopener noreferrer" class="handle">@parsaismm</a>
@@ -407,6 +552,10 @@
                 <div class="metric-label">دنبال‌کننده (فالوور)</div>
             </div>
             <div class="metric-card">
+                <div class="metric-num rose">۲۴٬۲۰۰٬۰۰۰+</div>
+                <div class="metric-label">رکورد بازدید تک ریلز</div>
+            </div>
+            <div class="metric-card">
                 <div class="metric-num cyan">۹۱۷٬۰۰۰+</div>
                 <div class="metric-label">میانگین ویو هر ریلز</div>
             </div>
@@ -417,16 +566,39 @@
         </div>
     </header>
 
+    <!-- 24 Million Reel Record Feature -->
+    <div class="record-card">
+        <div class="record-cover-wrap">
+            <img src="assets/cover_C-S6HW5Cmar.jpg" alt="ریلز ۲۴ میلیونی پارسا کمالی" class="record-cover-img">
+        </div>
+        <div class="record-content">
+            <div class="record-tag">🔥 رکوردی‌ترین اثر پیج</div>
+            <div class="record-title">ریلز شعرخوانی ۲۴.۲ میلیون بازدیدی</div>
+            <div class="record-stats-row">
+                <span class="record-stat-item">▶️ ۲۴٬۲۲۲٬۷۸۰ ویو</span>
+                <span>❤️ ۱٬۱۵۶٬۷۸۰ لایک</span>
+                <span>💬 ۳۰٬۸۵۰ کامنت</span>
+            </div>
+            <p style="font-size:12.5px; color:#cbd5e1; margin-bottom:12px; line-height:1.7;">
+                «دو شعر، یک کل کل با مزه...» اثری با بیش از ۲۴ میلیون بازدید که به عنوان یکی از وایرال‌ترین ویدیوهای ادبی اینستاگرام فارسی در تاریخ ثبت شد.
+            </p>
+            <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="record-link">
+                مشاهده مستقیم این ریلز در اینستاگرام ↗
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Sponsorship Package Section -->
     <section>
         <h2>پکیج طلایی: اسپانسرشیپ نقدی ۱۰ ویدیوی آینده</h2>
         <p>
-            این پکیج به صورت انحصاری برای یک برند متقاضی طراحی شده تا با قرارگیری نام و هویت بصری خود در ۱۰ اثر ویدیویی بعدی پارسا کمالی، به بیش از <strong>۱۰ میلیون مخاطب یکتا</strong> در بستر اینستاگرام و اکسپلور دسترسی مستقیم پیدا کند.
+            این پکیج به صورت انحصاری برای یک برند متقاضی طراحی شده تا با قرارگیری هویت بصری خود در ۱۰ اثر ویدیویی بعدی پارسا کمالی، به بیش از <strong>۱۰ میلیون مخاطب یکتا</strong> در بستر اینستاگرام و اکسپلور دسترسی قطعی پیدا کند.
         </p>
 
         <div class="sponsorship-main-card">
             <div class="sponsorship-header">
                 <div>
-                    <div class="sponsorship-title">بسته حامی مالی ۱۰ ویدیوی بعدی</div>
+                    <div class="sponsorship-title">بسته حامی مالی ۱۰ ویدیوی آینده</div>
                     <div style="font-size: 12px; color: var(--subtle); margin-top: 3px;">همکاری انحصاری با برند منتخب در تولید محتوای فید</div>
                 </div>
                 <div class="sponsorship-badge">انحصار کامل دسته‌بندی تجاری</div>
@@ -434,17 +606,17 @@
 
             <div class="sponsorship-metrics-highlight">
                 <div>
-                    <div style="font-size:18px; font-weight:900; color:var(--emerald);">۱۰٬۰۰۰٬۰۰۰+</div>
+                    <div style="font-size:19px; font-weight:900; color:var(--emerald);">۱۰٬۰۰۰٬۰۰۰+</div>
                     <div style="font-size:11.5px; color:var(--muted);">حداقل برآورد ویو ویدیویی کل دوره</div>
                 </div>
                 <div>
-                    <div style="font-size:18px; font-weight:900; color:var(--cyan);">۳۸۰٬۰۰۰+</div>
+                    <div style="font-size:19px; font-weight:900; color:var(--cyan);">۳۸۰٬۰۰۰+</div>
                     <div style="font-size:11.5px; color:var(--muted);">برآورد تجمعی لایک مخاطبان</div>
                 </div>
             </div>
 
             <div class="sponsorship-price">
-                توافقی / رقابتی <span>(پکیج جامع ۱۰ ویدیو نقدی)</span>
+                توافقی / نقدی <span>(پکیج جامع ۱۰ ویدیو)</span>
             </div>
 
             <ul class="deliverables-list">
@@ -467,70 +639,135 @@
             </ul>
 
             <div style="border-top: 1px dashed var(--border); padding-top: 14px; font-size: 12.5px; color: var(--subtle); line-height: 1.7;">
-                • نحوه تسویه مالی: تسویه نقدی دو مرحله‌ای (۵۰٪ پیش‌پرداخت همزمان با عقد قرارداد و ۵۰٪ پس از انتشار ویدیوی پنجم).<br>
-                • جدول زمان‌بندی انتشار ویدیوها طبق توافق و تقویم تولید استودیو هماهنگ می‌گردد.
+                • نحوه تسویه مالی: تسویه نقدی به صورت دو مرحله‌ای (۵۰٪ پیش‌پرداخت همزمان با عقد قرارداد و ۵۰٪ پس از انتشار ویدیوی پنجم).<br>
+                • زمان‌بندی انتشار: انتشار طبق جدول مدون با هماهنگی نماینده برند انجام می‌گردد.
             </div>
         </div>
     </section>
 
-    <!-- Recent Viral Reels Showcase -->
+    <!-- Top Performing Reels Showcase with Real Covers -->
     <section>
-        <h2>نمونه بازدهی و وایرالی ریلزهای اخیر پیج</h2>
+        <h2>برترین ریلزهای تاریخ پیج با کاور و آمار رسمی</h2>
         <p>
-            آمار واقعی پخش و تعامل چند اثر ویدیویی اخیر پارسا کمالی که نشان‌دهنده نفوذ بالا در اکسپلور است:
+            نمونه‌هایی از پربازدیدترین دکلمه‌ها و ویدیوهای میلیونی پارسا کمالی:
         </p>
 
         <div class="reels-grid">
-            <div class="reel-item">
-                <div class="reel-top">
-                    <span style="font-size:12px; font-weight:700; color:#fff;">ریلز رکوردی</span>
-                    <span class="reel-views">▶️ ۲٬۵۱۳٬۰۰۰ ویو</span>
+            <!-- 11.4M Reel -->
+            <div class="reel-card">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_C2IKC8oNRBs.jpg" alt="ریلز ۱۱ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view">۱۱.۴M ویو</span>
                 </div>
-                <div class="reel-caption">دکلمه و شعرخوانی عاشقانه با بیش از ۱۰۵ هزار لایک و ۲٬۳۴۰ کامنت</div>
-                <a href="https://instagram.com/p/DbaVb7loP2y/" target="_blank" rel="noopener noreferrer" class="reel-link">
-                    مشاهده پست در اینستاگرام ↗
-                </a>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۴۲۴٬۶۰۰ لایک</span>
+                        <span>💬 ۷٬۴۴۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«هر کی حفظی بخونه استوری کنه اد استوری میشه... دکلمه مشاعره و شعرخوانی»</div>
+                    <a href="https://instagram.com/p/C2IKC8oNRBs/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
 
-            <div class="reel-item">
-                <div class="reel-top">
-                    <span style="font-size:12px; font-weight:700; color:#fff;">ریلز اکسپلور میلیونی</span>
-                    <span class="reel-views">▶️ ۱٬۹۳۹٬۰۰۰ ویو</span>
+            <!-- 9.0M Reel -->
+            <div class="reel-card">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_C8FVlnPi6Ut.jpg" alt="ریلز ۹ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view">۹.۰M ویو</span>
                 </div>
-                <div class="reel-caption">اجرای پرمخاطب با بیش از ۱۱۸ هزار لایک و ۳٬۲۷۰ کامنت تعاملی</div>
-                <a href="https://instagram.com/p/DcOolnQIoef/" target="_blank" rel="noopener noreferrer" class="reel-link">
-                    مشاهده پست در اینستاگرام ↗
-                </a>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۳۷۲٬۸۰۰ لایک</span>
+                        <span>💬 ۱۱٬۲۹۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«خر یا آدم؟ این شعر رو واقعا خیلی دوست دارم و حیف بود که دکلمه نشه...»</div>
+                    <a href="https://instagram.com/p/C8FVlnPi6Ut/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
 
-            <div class="reel-item">
-                <div class="reel-top">
-                    <span style="font-size:12px; font-weight:700; color:#fff;">ریلز شعرخوانی</span>
-                    <span class="reel-views">▶️ ۱٬۷۹۴٬۰۰۰ ویو</span>
+            <!-- 8.2M Reel -->
+            <div class="reel-card">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_DBwPdj9oI7Z.jpg" alt="ریلز ۸ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view">۸.۲M ویو</span>
                 </div>
-                <div class="reel-caption">شعرخوانی احساسی با بیش از ۶۴ هزار لایک و اشتراک‌گذاری گسترده</div>
-                <a href="https://instagram.com/p/DdMnxLHIYds/" target="_blank" rel="noopener noreferrer" class="reel-link">
-                    مشاهده پست در اینستاگرام ↗
-                </a>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۳۹۰٬۷۰۰ لایک</span>
+                        <span>💬 ۷٬۵۷۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«پدر... دکلمه احساسی و ماندگار با صدها هزار اشتراک‌گذاری و اد استوری»</div>
+                    <a href="https://instagram.com/p/DBwPdj9oI7Z/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
 
-            <div class="reel-item">
-                <div class="reel-top">
-                    <span style="font-size:12px; font-weight:700; color:#fff;">ریلز صدای دلنشین</span>
-                    <span class="reel-views">▶️ ۱٬۳۳۲٬۰۰۰ ویو</span>
+            <!-- 7.0M Reel -->
+            <div class="reel-card">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_DFxB8UnoYqF.jpg" alt="ریلز ۷ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view">۷.۰M ویو</span>
                 </div>
-                <div class="reel-caption">دکلمه وایرال با بیش از ۶۵ هزار لایک و ۲٬۳۷۰ کامنت</div>
-                <a href="https://instagram.com/p/DdLTpzexSiM/" target="_blank" rel="noopener noreferrer" class="reel-link">
-                    مشاهده پست در اینستاگرام ↗
-                </a>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۲۶۶٬۲۰۰ لایک</span>
+                        <span>💬 ۵٬۴۵۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«رفته بودم سوی قبرستان شهر... دکلمه دلنشین دوبیتی‌های باباطاهر»</div>
+                    <a href="https://instagram.com/p/DFxB8UnoYqF/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5.8M Reel -->
+            <div class="reel-card">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_C4VqxveCNxM.jpg" alt="ریلز ۵.۸ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view">۵.۸M ویو</span>
+                </div>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۲۷۳٬۳۰۰ لایک</span>
+                        <span>💬 ۱۰٬۵۸۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«اینم از آخر عاقبت خجالتی بودن... طنز و شعرخوانی تعاملی با مخاطبان»</div>
+                    <a href="https://instagram.com/p/C4VqxveCNxM/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- 24.2M Reel Secondary Card -->
+            <div class="reel-card" style="border-color: rgba(245, 158, 11, 0.4);">
+                <div class="reel-thumb-wrap">
+                    <img src="assets/cover_C-S6HW5Cmar.jpg" alt="ریلز ۲۴.۲ میلیونی" class="reel-thumb-img">
+                    <span class="reel-badge-view" style="color:var(--gold); border-color:var(--gold);">۲۴.۲M ویو</span>
+                </div>
+                <div class="reel-card-body">
+                    <div class="reel-stats-bar">
+                        <span>❤️ ۱٬۱۵۶٬۷۰۰ لایک</span>
+                        <span>💬 ۳۰٬۸۵۰ کامنت</span>
+                    </div>
+                    <div class="reel-caption-text">«دو شعر، یک کل کل با مزه... رکوردی‌ترین ریلز پیج پارسا کمالی»</div>
+                    <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="reel-card-link">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Final CTA -->
     <div class="cta-box">
         <div class="cta-title">هماهنگی و رزرو اسپانسرشیپ ۱۰ ویدیو</div>
         <div class="cta-desc">
-            جهت استعلام رقم نهایی، بررسی هم‌خوانی هویت برند و تحویل فایل باکیفیت لوگو، مستقیماً از طریق تلگرام با مدیریت اسپانسرشیپ در ارتباط باشید.
+            جهت استعلام نرخ نهایی، بررسی هم‌خوانی هویت برند و تحویل فایل باکیفیت لوگو، مستقیماً از طریق تلگرام با مدیریت اسپانسرشیپ در ارتباط باشید.
         </div>
         <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-reserve">
             💬 ارسال پیام در تلگرام: @m4tinbeigipv
