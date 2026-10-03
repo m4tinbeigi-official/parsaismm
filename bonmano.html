@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروپوزال اختصاصی همکاری پارسا کمالی با قهوه بن‌مانو | ۱۰ ویدیوی فید</title>
+    <meta name="description" content="پروپوزال اختصاصی همراهی و اسپانسرشیپ ۱۰ ویدیوی آینده پارسا کمالی (@parsaismm) برای برند قهوه بن‌مانو.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #07090e;
+            --surface: #0f131d;
+            --surface-card: #141926;
+            --border: #1f2738;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --subtle: #64748b;
+            --gold: #f59e0b;
+            --brand: #b45309;
+            --brand-glow: rgba(180, 83, 9, 0.18);
+            --cyan: #38bdf8;
+            --emerald: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+            letter-spacing: 0 !important;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.85;
+            padding: 40px 16px 80px;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 50% 0%, var(--brand-glow), transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.05), transparent 40%);
+        }
+
+        .wrapper {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--cyan);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 7px 14px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background: #1a2233;
+            color: #fff;
+        }
+
+        header {
+            margin-bottom: 35px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .badge-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--brand);
+            background: var(--brand-glow);
+            border: 1px solid var(--brand);
+            padding: 4px 14px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+        }
+
+        .avatar-wrap {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, var(--brand), var(--gold));
+            box-shadow: 0 0 25px var(--brand-glow);
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(22px, 4vw, 30px);
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .brand-subtitle {
+            font-size: 14px;
+            color: var(--brand);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 8px;
+            text-align: center;
+        }
+
+        .metric-num {
+            font-size: 20px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .metric-num.brand-color { color: var(--brand); }
+
+        .metric-label {
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        section {
+            margin-bottom: 38px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 18px;
+            background: var(--brand);
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 13.8px;
+            color: var(--muted);
+            line-height: 1.95;
+            margin-bottom: 14px;
+        }
+
+        .concept-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 24px;
+        }
+
+        .scenario-box {
+            background: rgba(7, 9, 14, 0.7);
+            border-right: 3px solid var(--brand);
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-top: 14px;
+        }
+
+        .sponsorship-main-card {
+            background: linear-gradient(180deg, #161b26 0%, #0d1118 100%);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 22px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .deliverables-list {
+            list-style: none;
+            margin: 18px 0;
+        }
+
+        .deliverables-list li {
+            font-size: 13.8px;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.75;
+        }
+
+        .check-icon {
+            color: var(--brand);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(180deg, #131722 0%, #0c0f16 100%);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-reserve {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--brand);
+            color: #07090e;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-size: 14.5px;
+            font-weight: 800;
+            transition: all 0.2s;
+            margin-top: 14px;
+        }
+
+        .btn-reserve:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--subtle);
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+        }
+
+        @media (max-width: 640px) {
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-nav">
+        <a href="index.html" class="back-link">
+            ← بازگشت به صفحه اصلی پارسا کمالی
+        </a>
+        <div style="font-size:12px; color:var(--subtle);">پروپوزال رسمی اختصاصی B2B</div>
+    </div>
+
+    <header>
+        <div class="badge-brand">
+            همکاری اختصاصی با برند قهوه بن‌مانو
+        </div>
+        <div class="avatar-wrap">
+            <img src="assets/avatar.jpg" alt="پارسا کمالی" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Parsa+Kamali&background=f59e0b&color=fff'">
+        </div>
+        <h1>پارسا کمالی × قهوه بن‌مانو</h1>
+        <div class="brand-subtitle">همراه لحظات ناب، تمرکز و آرامش</div>
+
+        <!-- Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-num brand-color">1.15M</div>
+                <div class="metric-label">جامعه مخاطبان (فالوور)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">24.2M</div>
+                <div class="metric-label">رکورد بازدید تک ریلز</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">917K+</div>
+                <div class="metric-label">میانگین بازدید هر اثر</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">38.6K</div>
+                <div class="metric-label">میانگین پسند مخاطبان</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>رویکرد مفهومی و هم‌پوشانی برند (Strategic Fit)</h2>
+        <div class="concept-card">
+            یک فنجان قهوه در کنار شعری که دل را آرام می‌کند. بن‌مانو همواره حامی فرهنگ، هنر و کتاب‌خوانی بوده است. هم‌نشینی فنجان قهوه با صدای دکلمه و آرامش شبانه، تصویری ماندگار، باکلاس و بدون تاریخ انقضا در ذهن مخاطبان بیش از ۱.۱۵ میلیون نفری پارسا می‌سازد.
+            <div class="scenario-box">
+                <strong>پیشنهاد زاویه سناریو:</strong> حضور ارگانیک فنجان قهوه بن‌مانو در میز کنار دیوان اشعار، بدون بزرگ‌نمایی زننده تبلیغاتی، به عنوان بخشی طبیعی از لحظه تامل و شعرخوانی.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>پکیج همراهی برند: اسپانسرشیپ ۱۰ ویدیوی آینده</h2>
+        <div class="sponsorship-main-card">
+            <div style="font-size:17px; font-weight:900; color:#fff; margin-bottom:6px;">
+                بسته حامی انحصاری ۱۰ اثر ویدیویی پارسا کمالی
+            </div>
+            <p style="font-size:13px; color:var(--muted); margin-bottom:14px;">
+                حضور هماهنگ، مستمر و باوقار نشان تجاری <b>قهوه بن‌مانو</b> در فید یک پیج میلیونی با مخاطبان احساسی و وفادار.
+            </p>
+
+            <ul class="deliverables-list">
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>درج نشان تجاری قهوه بن‌مانو:</strong> لوگوی رسمی برند در تمامی ۱۰ ویدیوی آینده در گوشه قاب اثر جانمایی می‌گردد.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>منشن و تگ رسمی در خط اول کپشن:</strong> آیدی اینستاگرام پیج رسمی قهوه بن‌مانو در آغاز کپشن هر ۱۰ ویدیو همراه با پیام تشکر معرفی می‌شود.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>انحصار موضوعی در رسته فعالیت قهوه بن‌مانو:</strong> در طول انتشار این ۱۰ اثر، هیچ برند رقیب دیگری در این زمینه معرفی نخواهد شد.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>ماندگاری همیشگی آثار در فید:</strong> ویدیوها به عنوان بخشی از آرشیو دائمی صفحه حفظ شده و پاک نمی‌شوند.</span>
+                </li>
+            </ul>
+
+            <div style="border-top:1px dashed var(--border); padding-top:14px; font-size:12.5px; color:var(--subtle); line-height:1.7;">
+                • مدل پرداخت: تسویه نقدی دو مرحله‌ای (۵۰٪ پیش‌پرداخت در آغاز همکاری و ۵۰٪ پس از انتشار ویدیوی پنجم).<br>
+                • زمان‌بندی: انتشار آثار بر اساس تقویم مدون استودیو و با هماهنگی نماینده قهوه بن‌مانو انجام می‌پذیرد.
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-box">
+        <div style="font-size:18px; font-weight:900; color:#fff; margin-bottom:8px;">
+            جلسه هماهنگی و گفتگوی اختصاصی
+        </div>
+        <p style="font-size:13px; color:var(--muted); max-width:520px; margin:0 auto 16px;">
+            جهت دریافت نمونه تست قاب بصری و هماهنگی آغاز همراهی ۱۰ اثر، با مدیریت در تلگرام گفتگو فرمایید.
+        </p>
+        <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-reserve">
+            💬 هماهنگی در تلگرام: @m4tinbeigipv
+        </a>
+    </div>
+
+    <footer>
+        <p>مدیریت و هماهنگی تبلیغات: <b>ریک سانچز</b></p>
+        <p style="margin-top:6px;">تمام حقوق این اثر متعلق به رسانه پارسا کمالی (@parsaismm) است.</p>
+    </footer>
+</div>
+</body>
+</html>
