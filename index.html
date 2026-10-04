@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پارسا کمالی (@parsaismm) | پروپوزال رسمی حامی مالی ۱۰ ویدیوی آینده</title>
-    <meta name="description" content="پروپوزال رسمی همراهی برند و حامی مالی برای ۱۰ ویدیوی آینده پارسا کمالی (@parsaismm). رسانه دکلمه و شعرخوانی با بیش از ۱.۱۵ میلیون مخاطب.">
+    <title>پارسا کمالی (@parsaismm) | پروپوزال رسمی حامی مالی و داستان‌سرایی برند</title>
+    <meta name="description" content="پروپوزال رسمی همراهی برند و حامی مالی برای آثار ویدیویی پارسا کمالی (@parsaismm). تولید محتوای داستانی، انیمیشن مفهومی، نریشن فاخر و دسترسی به بیش از ۱.۱۵ میلیون مخاطب وفادار.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
             --cyan: #38bdf8;
             --emerald: #10b981;
             --rose: #f43f5e;
+            --purple: #a855f7;
         }
 
         * {
@@ -120,7 +121,7 @@
             border-radius: 12px;
             margin-bottom: 24px;
             line-height: 1.8;
-            max-width: 540px;
+            max-width: 580px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -289,6 +290,90 @@
             color: #07090e;
         }
 
+        /* Two Sponsorship Models Grid */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .model-card {
+            background: linear-gradient(180deg, #161b26 0%, #0d1118 100%);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: all 0.2s;
+        }
+
+        .model-card.featured {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 15px 35px rgba(245, 158, 11, 0.12);
+        }
+
+        .model-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .model-tag.gold {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--gold);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+        }
+
+        .model-tag.purple {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--purple);
+            border: 1px solid rgba(168, 85, 247, 0.35);
+        }
+
+        .model-title {
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .model-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .deliverables-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .deliverables-list li {
+            font-size: 13.5px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.7;
+        }
+
+        .check-icon {
+            color: var(--gold);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
         /* 3:4 Reels Grid */
         .reels-grid-34 {
             display: grid;
@@ -413,94 +498,6 @@
             color: #07090e;
         }
 
-        /* The Main 10-Video Sponsorship Box */
-        .sponsorship-main-card {
-            background: linear-gradient(180deg, #161b26 0%, #0d1118 100%);
-            border: 1px solid rgba(245, 158, 11, 0.45);
-            border-radius: 18px;
-            padding: 28px 24px;
-            margin-top: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            position: relative;
-        }
-
-        .sponsorship-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            gap: 10px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 14px;
-        }
-
-        .sponsorship-title {
-            font-size: 19px;
-            font-weight: 900;
-            color: #fff;
-        }
-
-        .sponsorship-badge {
-            background: rgba(245, 158, 11, 0.2);
-            border: 1px solid rgba(245, 158, 11, 0.4);
-            color: var(--gold);
-            font-size: 11.5px;
-            font-weight: 800;
-            padding: 3px 12px;
-            border-radius: 9999px;
-        }
-
-        .sponsorship-metrics-highlight {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            background: rgba(7, 9, 14, 0.6);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 14px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .sponsorship-price {
-            font-size: 26px;
-            font-weight: 900;
-            color: var(--gold);
-            margin-bottom: 18px;
-            display: flex;
-            align-items: baseline;
-            gap: 6px;
-        }
-
-        .sponsorship-price span {
-            font-size: 13.5px;
-            color: var(--muted);
-            font-weight: 500;
-        }
-
-        .deliverables-list {
-            list-style: none;
-            margin-bottom: 22px;
-        }
-
-        .deliverables-list li {
-            font-size: 14px;
-            color: #cbd5e1;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            line-height: 1.75;
-        }
-
-        .check-icon {
-            color: var(--gold);
-            font-weight: bold;
-            flex-shrink: 0;
-            margin-top: 1px;
-        }
-
         .cta-box {
             background: linear-gradient(180deg, #131722 0%, #0c0f16 100%);
             border: 1px solid rgba(245, 158, 11, 0.4);
@@ -582,7 +579,7 @@
 <div class="wrapper">
     <header>
         <div class="badge-verified">
-            🎙️ رسانه رسمی پارسا کمالی | گوینده و راوی اشعار
+            🎙️ رسانه رسمی پارسا کمالی | راوی داستان‌ها، انیمیشن مفهومی و نریشن
         </div>
         <div class="avatar-box">
             <img src="assets/avatar.jpg" alt="پارسا کمالی" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Parsa+Kamali&background=f59e0b&color=fff'">
@@ -591,7 +588,7 @@
         <a href="https://instagram.com/parsaismm" target="_blank" rel="noopener noreferrer" class="handle">@parsaismm</a>
 
         <div class="bio-box">
-            ژولیده شعر‌باف | اجرای دکلمه‌ها و نریشن‌های ماندگار ادبیات فارسی
+            روایت‌گر داستان‌های اساطیری، تاریخی و کهن همراه با تصویرسازی و انیمیشن مفهومی، در کنار نریشن‌های ماندگار ادب فارسی
         </div>
 
         <!-- Official Live Stats Grid -->
@@ -623,14 +620,14 @@
         </div>
         <div class="record-info">
             <div class="record-tag">🔥 پرمخاطب‌ترین اثر کارنامه پیج</div>
-            <div class="record-title">ریلز شعرخوانی با 24.2M بازدید</div>
+            <div class="record-title">ریلز ویدیویی با 24.2M بازدید</div>
             <div class="record-stats-row">
                 <span class="record-stat-item">▶️ 24.2M ویو</span>
                 <span>❤️ 1.15M لایک</span>
                 <span>💬 30.8K کامنت</span>
             </div>
             <p style="font-size:12.8px; color:#cbd5e1; margin-bottom:14px; line-height:1.75;">
-                «دو شعر، یک کل کل با مزه...» اثری با بیش از ۲۴ میلیون نوبت پخش که به عنوان یکی از وایرال‌ترین قطعات شعرخوانی در اینستاگرام فارسی مورد استقبال مخاطبان قرار گرفت.
+                «دو شعر، یک کل کل با مزه...» اثری با بیش از ۲۴ میلیون نوبت پخش که به عنوان یکی از وایرال‌ترین آثار اینستاگرام فارسی در تاریخ ثبت شده است.
             </p>
             <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="record-link">
                 مشاهده مستقیم اثر در اینستاگرام ↗
@@ -638,60 +635,266 @@
         </div>
     </div>
 
-    <!-- Main Sponsorship Package Section -->
+    <!-- Core Direction: Storytelling & Animation Focus -->
     <section>
-        <h2>پکیج همراهی برند: اسپانسرشیپ ۱۰ ویدیوی آینده</h2>
+        <h2>رویکرد محتوایی: تمرکز بر روایت داستان و تصویرگری انیمیشن</h2>
         <p>
-            هم‌نشینی نام برند با صدایی که شنیده می‌شود. این پکیج برای همراهی اختصاصی یک حامی در ۱۰ اثر ویدیویی آینده طراحی شده است؛ فرصتی برای دیده شدن در فضایی اصیل، عاطفی و به دور از هیاهوهای زرد، در کنار جامعه‌ای میلیونی از مخاطبان وفادار و اهل کلمه.
+            تولید محتوای رسانه پارسا کمالی با بهره‌گیری از جذابیت جهانی <strong>داستان‌گویی (Storytelling) و تصویرسازی انیمیشن</strong> پیوند خورده است. پژوهش‌ها و تجربه پیج نشان می‌دهد مخاطب امروزی بیش از هر قالبی، تشنه شنیدن یک قصه جذاب، سرگذشت‌های تاریخی، رازهای اساطیری و داستان‌های شنیده‌نشده همراه با گرافیک چشم‌نواز است. برندها در چنین بستری نه به شکل یک آگهی وصله‌شده، بلکه در متن یک ماجرای به‌یادماندنی در ذهن میلیون‌ها بیننده ماندگار می‌شوند.
+        </p>
+    </section>
+
+    <!-- Two Strategic Sponsorship Models -->
+    <section>
+        <h2>مدل‌های استراتژیک همکاری با حامیان مالی</h2>
+        <div class="models-grid">
+            <!-- Model 1: 10-Video Sponsorship (Creator Freedom) -->
+            <div class="model-card featured">
+                <div>
+                    <span class="model-tag gold">مدل اول | همراهی مداوم</span>
+                    <div class="model-title">اسپانسرشیپ ۱۰ ویدیوی آینده</div>
+                    <div class="model-desc">
+                        همراهی کلی با برند بدون تحمیل سناریوی تبلیغاتی؛ دست باز کریتور در تولید ناب‌ترین داستان‌ها با تضمین بالاترین تعامل ارگانیک.
+                    </div>
+                    <ul class="deliverables-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>درج نشان تجاری برند:</strong> قرارگیری لوگوی شفاف برند حامی در تمامی ۱۰ ویدیوی بعدی.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>منشن رسمی در کپشن:</strong> تگ و منشن مستقیم آیدی پیج حامی در خط نخست متن هر ۱۰ اثر.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>انحصار دسته‌بندی تجاری:</strong> عدم پذیرش برندهای رقیب یا هم‌پوشان در طول دوره انتشار ۱۰ ویدیو.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>ماندگاری دائمی:</strong> ثبت ابدی آثار در فید اصلی صفحه به عنوان بخشی از آرشیو پیج.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size:12px; color:var(--subtle); border-top:1px dashed var(--border); padding-top:10px;">
+                    مناسب برای برندهایی که آگاهی از برند پیوسته، پرستیژ پایدار و دیده‌شدن مستمر را می‌خواهند.
+                </div>
+            </div>
+
+            <!-- Model 2: Custom Storytelling & Animation Single Post -->
+            <div class="model-card">
+                <div>
+                    <span class="model-tag purple">مدل دوم | سناریوی سفارشی</span>
+                    <div class="model-title">روایت داستانی اختصاصی با انیمیشن</div>
+                    <div class="model-desc">
+                        خلق یک اثر ویدیویی مستقل از صفر، بر پایه ارزش‌ها یا پیام محوری برند شما با سناریونویسی و تصویرسازی متناسب.
+                    </div>
+                    <ul class="deliverables-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>سناریونویسی روایی سفارشی:</strong> تدوین قصه پیرامون مفاهیم هم‌راستا با خدمت یا فلسفه برند.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>تولید اختصاصی بصری و انیمیشن:</strong> طراحی کاراکترها و صحنه‌های مرتبط با ماجرای برند.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>ادغام طبیعی و ارگانیک:</strong> معرفی هوشمندانه خدمت در نقطه عطف یا نتیجه‌گیری داستان.</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span><strong>تاییدیه پیش از انتشار:</strong> بازبینی کامل نسخه نهایی توسط تیم بازاریابی برند قبل از انتشار.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size:12px; color:var(--subtle); border-top:1px dashed var(--border); padding-top:10px;">
+                    ویژه کمپین‌های معرفی محصول جدید، ری‌برندینگ یا مناسبت‌های ویژه سازمانی.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Performing Storytelling & Animation Reels Showcase (3:4 Ratio) -->
+    <section>
+        <h2>نمونه آثاری از روایت‌های داستانی و انیمیشن پیج (نسبت ۳:۴)</h2>
+        <p>
+            استقبال گسترده میلیونی مخاطبان از سبک روایت داستانی و تصویرگری‌های اخیر پارسا کمالی:
         </p>
 
-        <div class="sponsorship-main-card">
-            <div class="sponsorship-header">
-                <div>
-                    <div class="sponsorship-title">بسته حامی مالی ۱۰ ویدیوی بعدی</div>
-                    <div style="font-size: 12px; color: var(--subtle); margin-top: 3px;">همراهی انحصاری با یک حامی منتخب در آثار ویدیویی جدید</div>
+        <div class="reels-grid-34">
+            <!-- 2.57M Hafez Story Reel -->
+            <div class="reel-card-34" style="border-color:rgba(245, 158, 11, 0.45);">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DRr_dEpCJEQ.jpg" alt="داستان حافظ شیرازی ۲.۵۷ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views" style="color:var(--gold);">▶️ 2.57M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 210K</span>
+                            <span>💬 1.8K</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="sponsorship-badge">انحصار در دسته‌بندی تجاری</div>
-            </div>
-
-            <div class="sponsorship-metrics-highlight">
-                <div>
-                    <div style="font-size:19px; font-weight:900; color:var(--emerald);">10M+</div>
-                    <div style="font-size:11.5px; color:var(--muted);">ظرفیت تخمینی بازدید بر مبنای میانگین صفحه</div>
-                </div>
-                <div>
-                    <div style="font-size:19px; font-weight:900; color:var(--cyan);">380K+</div>
-                    <div style="font-size:11.5px; color:var(--muted);">ظرفیت تخمینی تعامل و لایک مخاطبان</div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«شراب الهی بود یا زمینی؟ سرگذشت ناگفته حافظ شیرازی با استقبال ۲.۵ میلیونی»</div>
+                    <a href="https://instagram.com/p/DRr_dEpCJEQ/" target="_blank" rel="noopener noreferrer" class="reel-action-btn" style="border-color:var(--gold); color:var(--gold);">
+                        مشاهده در اینستاگرام ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="sponsorship-price">
-                مدل همکاری: اختصاصی و سفارشی <span>(تعیین شرایط بر پایه اهداف برند)</span>
+            <!-- Narcissus Myth Story Reel -->
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DRpav4WCBNf.jpg" alt="افسانه نارسیس" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ 278K ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 20.2K</span>
+                            <span>💬 700</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«افسانه نارسیس؛ روایتی روان‌شناختی و اساطیری در کنار برکه خودشیفتگی»</div>
+                    <a href="https://instagram.com/p/DRpav4WCBNf/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
 
-            <ul class="deliverables-list">
-                <li>
-                    <span class="check-icon">✓</span>
-                    <span><strong>درج نشان تجاری برند در تمامی ۱۰ ویدیو:</strong> لوگوی شفاف برند شما با کیفیت مطلوب در گوشه قاب تمامی ۱۰ ویدیوی بعدی به شکلی هماهنگ و باوقار قرار می‌گیرد.</span>
-                </li>
-                <li>
-                    <span class="check-icon">✓</span>
-                    <span><strong>منشن مستقیم و تگ رسمی در کپشن:</strong> در خط آغازین متن کپشن هر ۱۰ اثر، آیدی پیج اینستاگرام حامی به همراه متن سپاسگزاری معرفی می‌گردد.</span>
-                </li>
-                <li>
-                    <span class="check-icon">✓</span>
-                    <span><strong>انحصار کامل دسته‌بندی موضوعی:</strong> در طول این ۱۰ ویدیو، هیچ کسب‌وکار رقیب یا حامی دیگری در صفحه حضور نخواهد داشت تا تمام توجه به برند شما معطوف باشد.</span>
-                </li>
-                <li>
-                    <span class="check-icon">✓</span>
-                    <span><strong>ماندگاری همیشگی در فید:</strong> کلیه ۱۰ اثر در فید اصلی صفحه باقی می‌مانند و به عنوان بخشی از آرشیو محتوایی پیج دردسترس خواهند بود.</span>
-                </li>
-            </ul>
-
-            <div style="border-top: 1px dashed var(--border); padding-top: 14px; font-size: 12.5px; color: var(--subtle); line-height: 1.7;">
-                • شرایط پرداخت: تسویه به صورت دو مرحله‌ای (۵۰٪ پیش‌پرداخت همزمان با آغاز همکاری و ۵۰٪ پس از انتشار ویدیوی پنجم).<br>
-                • زمان‌بندی: انتشار آثار بر اساس تقویم مدون استودیو و با هماهنگی نماینده حامی پیش خواهد رفت.
+            <!-- Historical Mystery Story Reel -->
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DRxFcxECLzW.jpg" alt="رازهای شگفت‌انگیز تاریخ" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ 268K ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 19.2K</span>
+                            <span>💬 810</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«عجیب بود، نبود؟ داستان‌های رازآلود تاریخی و ناگفته‌های تمدن‌ها»</div>
+                    <a href="https://instagram.com/p/DRxFcxECLzW/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
             </div>
+
+            <!-- Emotional Story Reel (Clytie) -->
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DRPj2K6iKyE.jpg" alt="قصه کلیتی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ 171K ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 11.3K</span>
+                            <span>💬 580</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«آخر این داستان اشکت درمیاد... قصه عاشقانه کلیتی و حقایق ظریف زندگی»</div>
+                    <a href="https://instagram.com/p/DRPj2K6iKyE/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- 11.4M Viral Classic Reel -->
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_C2IKC8oNRBs.jpg" alt="کاور ریلز ۱۱.۴ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ 11.4M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 424K</span>
+                            <span>💬 7.4K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«هر کی حفظی بخونه استوری کنه اد استوری میشه... دکلمه مشاعره و شعرخوانی»</div>
+                    <a href="https://instagram.com/p/C2IKC8oNRBs/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8.2M Father Reel -->
+            <div class="reel-card-34">
+                <div class="reel-poster-box">
+                    <img src="assets/cover_DBwPdj9oI7Z.jpg" alt="کاور ریلز ۸.۲ میلیونی" class="reel-poster-img">
+                    <div class="reel-gradient-overlay">
+                        <div class="reel-overlay-views">▶️ 8.2M ویو</div>
+                        <div class="reel-overlay-stats">
+                            <span>❤️ 390K</span>
+                            <span>💬 7.6K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reel-bottom-info">
+                    <div class="reel-caption-mini">«پدر... دکلمه احساسی و ماندگار با صدها هزار اشتراک‌گذاری و اد استوری»</div>
+                    <a href="https://instagram.com/p/DBwPdj9oI7Z/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
+                        مشاهده در اینستاگرام ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Brand Proposals Section -->
+    <section>
+        <h2>پروپوزال‌های اختصاصی برندهای پیشروی ایرانی</h2>
+        <p>
+            برای برندهای معتبر ملی، زاویه ورود و رویکرد سناریویی اختصاصی متناسب با هویت برند تدوین شده است:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 14px;">
+            <a href="taaghche.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+                <div>
+                    <div style="font-size:11px; font-weight:800; color:#0284c7; margin-bottom:4px;">کتاب صوتی و الکترونیک</div>
+                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال طاقچه</div>
+                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">پیوند طبیعی داستان‌ها و صدای نریشن با گنجینه کتاب‌های صوتی طاقچه</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; color:#0284c7; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
+            </a>
+
+            <a href="blubank.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+                <div>
+                    <div style="font-size:11px; font-weight:800; color:#3b82f6; margin-bottom:4px;">فین‌تک و نئوبانک</div>
+                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال بلوبانک سامان</div>
+                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">تجربه حس خوب، هدیه و انتقال مهر در بستر ویدیوهای میلیونی</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; color:#3b82f6; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
+            </a>
+
+            <a href="jabama.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+                <div>
+                    <div style="font-size:11px; font-weight:800; color:#f59e0b; margin-bottom:4px;">سفر و اقامتگاه بوم‌گردی</div>
+                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال جاباما</div>
+                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">روایت‌های سفر، آرامش و قصه‌های بوم‌گردی‌های دنج ایران</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; color:#f59e0b; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
+            </a>
+
+            <a href="bonmano.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+                <div>
+                    <div style="font-size:11px; font-weight:800; color:#b45309; margin-bottom:4px;">قهوه تخصصی و سبک زندگی</div>
+                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال قهوه بن‌مانو</div>
+                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">یک فنجان قهوه در کنار شنیدن قصه‌ای که ذهن را آرام می‌کند</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; color:#b45309; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
+            </a>
+
+            <a href="fidibo.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+                <div>
+                    <div style="font-size:11px; font-weight:800; color:#10b981; margin-bottom:4px;">کتاب صوتی و رادیو گوشه</div>
+                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال فیدیبو</div>
+                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">صدای داستان‌ها در خانه فرهنگ و رادیو گوشه فیدیبو</div>
+                </div>
+                <div style="font-size:12px; font-weight:700; color:#10b981; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
+            </a>
         </div>
     </section>
 
@@ -771,196 +974,11 @@
         </div>
     </section>
 
-    <!-- Dedicated Brand Proposals Section -->
-    <section>
-        <h2>پروپوزال‌های اختصاصی برندهای پیشروی ایرانی</h2>
-        <p>
-            برای برندهای معتبر ملی، زاویه ورود و رویکرد سناریویی اختصاصی متناسب با هویت برند تدوین شده است:
-        </p>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 14px;">
-            <a href="taaghche.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#0284c7; margin-bottom:4px;">کتاب صوتی و الکترونیک</div>
-                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال طاقچه</div>
-                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">پیوند طبیعی صدای دکلمه‌ها با گنجینه کتاب‌های صوتی طاقچه</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; color:#0284c7; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
-            </a>
-
-            <a href="blubank.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#3b82f6; margin-bottom:4px;">فین‌تک و نئوبانک</div>
-                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال بلوبانک سامان</div>
-                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">تجربه حس خوب، هدیه و انتقال مهر در بستر ویدیوهای میلیونی</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; color:#3b82f6; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
-            </a>
-
-            <a href="jabama.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#f59e0b; margin-bottom:4px;">سفر و اقامتگاه بوم‌گردی</div>
-                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال جاباما</div>
-                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">سفر، سکوت و شعر در کلبه‌ها و اقامتگاه‌های دنج ایران</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; color:#f59e0b; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
-            </a>
-
-            <a href="bonmano.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#b45309; margin-bottom:4px;">قهوه تخصصی و سبک زندگی</div>
-                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال قهوه بن‌مانو</div>
-                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">یک فنجان قهوه در کنار شعری که دل را آرام می‌کند</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; color:#b45309; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
-            </a>
-
-            <a href="fidibo.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
-                <div>
-                    <div style="font-size:11px; font-weight:800; color:#10b981; margin-bottom:4px;">کتاب صوتی و رادیو گوشه</div>
-                    <div style="font-size:16px; font-weight:900; color:#fff; margin-bottom:6px;">پروپوزال فیدیبو</div>
-                    <div style="font-size:12px; color:var(--muted); line-height:1.6;">صدای کلمات در خانه فرهنگ و رادیو گوشه فیدیبو</div>
-                </div>
-                <div style="font-size:12px; font-weight:700; color:#10b981; margin-top:12px;">مشاهده پروپوزال اختصاصی ←</div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Top Performing Reels Showcase in 3:4 Ratio -->
-    <section>
-        <h2>نمونه آثاری از کارنامه صفحه (نسبت ۳:۴)</h2>
-        <p>
-            گوشه‌ای از دکلمه‌ها و ویدیوهای پرمخاطب پارسا کمالی که گواهی بر استقبال و علاقه گسترده مخاطبان به این شیوه روایت است:
-        </p>
-
-        <div class="reels-grid-34">
-            <!-- 11.4M Reel -->
-            <div class="reel-card-34">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_C2IKC8oNRBs.jpg" alt="کاور ریلز ۱۱.۴ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views">▶️ 11.4M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 424K</span>
-                            <span>💬 7.4K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«هر کی حفظی بخونه استوری کنه اد استوری میشه... دکلمه مشاعره و شعرخوانی»</div>
-                    <a href="https://instagram.com/p/C2IKC8oNRBs/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- 9.0M Reel -->
-            <div class="reel-card-34">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_C8FVlnPi6Ut.jpg" alt="کاور ریلز ۹ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views">▶️ 9.1M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 372K</span>
-                            <span>💬 11.3K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«خر یا آدم؟ این شعر رو واقعا خیلی دوست دارم و حیف بود که دکلمه نشه...»</div>
-                    <a href="https://instagram.com/p/C8FVlnPi6Ut/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- 8.2M Reel -->
-            <div class="reel-card-34">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_DBwPdj9oI7Z.jpg" alt="کاور ریلز ۸.۲ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views">▶️ 8.2M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 390K</span>
-                            <span>💬 7.6K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«پدر... دکلمه احساسی و ماندگار با صدها هزار اشتراک‌گذاری و اد استوری»</div>
-                    <a href="https://instagram.com/p/DBwPdj9oI7Z/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- 7.0M Reel -->
-            <div class="reel-card-34">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_DFxB8UnoYqF.jpg" alt="کاور ریلز ۷ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views">▶️ 7.1M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 266K</span>
-                            <span>💬 5.5K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«رفته بودم سوی قبرستان شهر... دکلمه دلنشین دوبیتی‌های باباطاهر»</div>
-                    <a href="https://instagram.com/p/DFxB8UnoYqF/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- 5.8M Reel -->
-            <div class="reel-card-34">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_C4VqxveCNxM.jpg" alt="کاور ریلز ۵.۸ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views">▶️ 5.8M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 273K</span>
-                            <span>💬 10.6K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«اینم از آخر عاقبت خجالتی بودن... طنز و شعرخوانی تعاملی با مخاطبان»</div>
-                    <a href="https://instagram.com/p/C4VqxveCNxM/" target="_blank" rel="noopener noreferrer" class="reel-action-btn">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-
-            <!-- 24.2M Reel Card in 3:4 -->
-            <div class="reel-card-34" style="border-color: rgba(245, 158, 11, 0.45);">
-                <div class="reel-poster-box">
-                    <img src="assets/cover_C-S6HW5Cmar.jpg" alt="کاور ریلز ۲۴.۲ میلیونی" class="reel-poster-img">
-                    <div class="reel-gradient-overlay">
-                        <div class="reel-overlay-views" style="color:var(--gold);">▶️ 24.2M ویو</div>
-                        <div class="reel-overlay-stats">
-                            <span>❤️ 1.15M</span>
-                            <span>💬 30.8K</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reel-bottom-info">
-                    <div class="reel-caption-mini">«دو شعر، یک کل کل با مزه... رکوردی‌ترین ریلز پیج پارسا کمالی»</div>
-                    <a href="https://instagram.com/p/C-S6HW5Cmar/" target="_blank" rel="noopener noreferrer" class="reel-action-btn" style="border-color:var(--gold); color:var(--gold);">
-                        مشاهده در اینستاگرام ↗
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Final CTA -->
     <div class="cta-box">
         <div class="cta-title">گفتگو و بررسی همکاری</div>
         <div class="cta-desc">
-            چنانچه مایلید نام برند شما در قالبی شایسته، محترمانه و ماندگار در کنار ۱۰ اثر ویدیویی آینده قرار گیرد، جهت بررسی زمینه فعالیت و ارسال فایل نشان تجاری از طریق تلگرام با مدیریت تبلیغات در ارتباط باشید.
+            چنانچه مایلید نام برند شما در قالبی شایسته، محترمانه و ماندگار در کنار آثار داستانی و انیمیشن آینده قرار گیرد، جهت بررسی زمینه فعالیت و ارسال فایل نشان تجاری از طریق تلگرام با مدیریت تبلیغات در ارتباط باشید.
         </div>
         <a href="https://t.me/m4tinbeigipv" target="_blank" rel="noopener noreferrer" class="btn-reserve">
             💬 ارتباط در تلگرام: @m4tinbeigipv
